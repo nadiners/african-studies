@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+
+a {text-decoration: none;}
+ul li{list-style: none;}
+body{ margin:auto;
+	font-family: "ratio-display";}
+
+ .hebrew-font{ font-family: "Alef Hebrew";   Arial,
+               sans-serif;}
+
+.navbar li{
+	font-size: 20px;
+	margin-left: 10px;
+	display: inline-block;}
+.navbar li a{	color: #CE7126;
+}
+
+#current-image{
+	z-index: -1;
+	position: absolute;
+}
+#navline{
+	margin-top: 500px;
+	background-color: white;
+}
+#current-text{font-size: 50px;
+color: white;
+text-align: center;}
