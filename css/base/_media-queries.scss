@@ -1,0 +1,60 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+$breakpoints: (phone: 640px,
+               tablet: 768px,
+               desktop: 1024px) !default;
+
+$media-expressions: (
+               	'screen': 'screen',
+               	'print': 'print',
+               	'handheld': 'handheld',
+               	'retina2x': (
+               		'(-webkit-min-device-pixel-ratio: 2)',
+               		'(min-resolution: 192dpi)'
+               	),
+               	'retina3x': (
+               		'(-webkit-min-device-pixel-ratio: 3)',
+               		'(min-resolution: 350dpi)'
+               	)
+               ) !default;
+
+$unit-intervals: (
+               	'px': 1,
+               	'em': 0.01,
+               	'rem': 0.1
+               ) !default;
+
+               @mixin media($conditions...) {
+                 @for $i from 1 through length($conditions) {
+                   $conditions: set-nth($conditions, $i, parse-expression(nth($conditions, $i)));
+                 }
+
+                 $branches: get-query-branches($conditions);
+                 $query: '';
+
+                 @each $branch in $branches {
+                   @if (str-length($query) != 0) {
+                     $query: $query + ', ';
+                   }
+
+                   $query: $query + $branch;
+                 }
+
+                 @media #{$query} {
+                   @content;
+                 }
+               }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
