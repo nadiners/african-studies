@@ -1,12 +1,13 @@
 @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
 
-a {text-decoration: none;}
+a:link :visited :hover :active {text-decoration: none;}
 ul li{list-style: none;}
-body{
-	font-family: "ratio-display";
+body{font-family: "ratio-display";}
+.notes{
+	color: #FF00E0;
+	font-size: 15px;
 }
-
 .container{
 	margin: auto;
 	max-width: 960px;
@@ -16,29 +17,68 @@ body{
                sans-serif;}
 
 .navbar li{
-	font-size: 20px;
-	margin-left: 20px;
-	display: inline-block;}
-.navbar li a{	color: #CE7126;
+	font-size: 16px;
+	margin-left: 30px;
+	display: inline-block;
+	text-align: center;
+}
+.navbar li a{
+	text-align: center;
+	color: #CE7126;
+}
+.navbar li a img{
+	width: 70px;
+
+}
+.languages li a{ 
+	
+	background-color: #CE7126;
+	color: white;
+	padding: 4px;
 }
 
-#current-image{
-	z-index: -1;
-	position: absolute;
-	width: 100%;
+.hebrew{
+	transform: rotate(6deg);
+	margin-top: 20px;}
+.english{transform: rotate(-2deg);}
+
+ul .languages:hover{
+	background-color: white;
+	color:  #CE7126;
 }
+#current-image{
+	background-image: url("../images/kinshasa-ville1.jpg");
+	z-index: -1;
+/*	position: absolute;
+*/	width: 100%;
+	height: 600px;
+}
+
+#logo img{width: 200px;}
 
 #navline{
 	padding-top: 20px;
-	margin-top: 350px;
 	background-color: white;
 	max-width: 960px;
 	margin: auto;
 }
-#current-text{font-size: 50px;
-color: white;
-font-weight: bolder;
+#current-text{
 text-align: center;
+}
+#exhibition-name{
+	padding-top: 250px;
+	font-size: 100px;
+	color: white;
+	text-shadow: 3px 3px #CE7126;
+
+/*	font-weight: bolder;
+*/	}
+#current-date{
+/*	font-weight: bolder;*/
+	color: white;
+	font-size: 30px;
+	text-shadow: 2px 2px #CE7126;
+
 }
 
 .description{font-size: 20px;}
@@ -46,3 +86,38 @@ text-align: center;
 .landing-about{margin-top: 80px;}
 .past-exhib{margin-top: 10px;}
 .past-exhib:hover {opacity: .5;}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (max-width:991px){
+
+#exhibition-name{
+	padding-top: 250px;
+	font-size: 90px;
+	color: white;
+	font-weight: bolder;
+	}
+#current-date{
+		font-weight: bolder;
+	color: white;
+	font-size: 25px;
+}
+
+}/* end max-width 991 */
+
+@media screen and (max-width:767px){
+
+#exhibition-name{
+	padding-top: 250px;
+	font-size: 50px;
+	color: white;
+	font-weight: bolder;
+	}
+#current-date{
+		font-weight: bolder;
+	color: white;
+	font-size: 20px;
+}
+}/* end max-width 767 */
