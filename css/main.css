@@ -33,14 +33,14 @@ body{font-family: "ratio-display";
 	width: 80%;
 
 }
-.languages li a{ 
+.languages li a{
 	background-color: #CE7126;
 	color: white;
 	padding: 4px;
 }
 
-.languages li a:hover{ 
-background-color: white; 
+.languages li a:hover{
+background-color: white;
 	color: #CE7126;}
 .hebrew{
 	transform: rotate(6deg);
@@ -51,13 +51,13 @@ background-color: white;
 
 
 #current-image{
-	background-image: url("../images/kinshasa-ville1.jpg");
-		/*background-image: url("../images/pregnant.jpg");*/
+background-image: url("../images/kinshasa-ville1.jpg");
+/*background-image: url("../images/pregnant.jpg");*/
 background-repeat: no-repeat;
-	z-index: -1;
-/*	position: absolute;
-*/	width: 100%;
-	height: 600px;
+z-index: -1;
+/*	position: absolute;*/
+width: 100%;
+height: 600px;
 }
 
 #logo img{width: 65%;}
@@ -73,7 +73,6 @@ background-repeat: no-repeat;
 text-align: center;
 }
 #exhibition-name{
-	padding-top: 250px;
 	font-size: 100px;
 	color: white;
 	text-shadow: 3px 3px #CE7126;
@@ -106,7 +105,6 @@ font-size: 28px;
 @media screen and (max-width:991px){
 
 #exhibition-name{
-	padding-top: 250px;
 	font-size: 90px;
 	color: white;
 	font-weight: bolder;
@@ -122,13 +120,12 @@ font-size: 28px;
 @media screen and (max-width:767px){
 
 #exhibition-name{
-	padding-top: 250px;
 	font-size: 50px;
 	color: white;
 	font-weight: bolder;
 	}
 #current-date{
-		font-weight: bolder;
+	font-weight: bolder;
 	color: white;
 	font-size: 20px;
 }
