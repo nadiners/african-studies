@@ -3,11 +3,12 @@
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main-layout.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 <!-- Latest compiled and minified JavaScript -->
-<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="https://use.typekit.net/mqu4vxc.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +17,22 @@
 </head>
 <body>
 	<header>
+<div class="banner">
+		<div class="bg"></div>
+		<div class="jumbotron">
+			<div id="exhibition-name">Kinshasa Times</div>
+			<div id="current-date">now on until the 13th of September 2016</div>
+		</div>
+</div>
+<!--
 		<div id="current-image">
 			<div id="current-text">
 				<div id="exhibition-name">Kinshasa Times</div>
 				<div id="current-date">now on until the 13th of September 2016</div>
-<!-- note: this will be a gallery, images change every few seconds -->
+note: this will be a gallery, images change every few seconds
 			</div>
-		</div> <!-- end of current image -->
+		</div>  end of current image -->
+	</header>
 <div class="row" id="navline">
 <!-- note: parallax here -->
 				<div class="col-sm-3" id="logo"> <img src="images/logo.svg"> </div>
@@ -48,14 +58,13 @@
 				<img src="images/icons/contact-bird.svg"><br>Contact</a>
 			</li>
 		</ul>
-		
+
 		<ul class="col-sm-1 languages">
 			<li class="english"> <a href="">English</a></li>
 			<li class="hebrew-font hebrew"><a href="">עברית</a></li>
 		</ul>
-
 </div> <!-- end of navline -->
-	</header>
+
 <div class="container">
 
 	<div class="row landing-about">
@@ -149,6 +158,16 @@
 <footer>
 	<a href="">Contact Us</a>
 </footer>
-</body>
+<script>
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+	var scrolled = $(window).scrollTop();
+	$('.bg').css('height', (jumboHeight-scrolled) + 'px');
+}
 
+$(window).scroll(function(e){
+	parallax();
+});
+</script>
+</body>
 </html>
