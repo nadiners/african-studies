@@ -48,7 +48,10 @@ background-color: white;
 .english{
 	margin-top: 20px;
 	transform: rotate(-2deg);}
-
+.categories{
+	font-size: 20px;
+	font-weight: 
+}
 
 #current-image{
 background-image: url("../images/kinshasa-ville1.jpg");
