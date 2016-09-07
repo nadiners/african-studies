@@ -73,24 +73,28 @@ height: 600px;
 	margin: auto;*/
 }
 #current-text{
-text-align: center;
+	 text-align: center;
+
 }
+
 #exhibition-name{
 	font-size: 100px;
 	color: white;
-	text-shadow: 3px 3px #CE7126;
-
-/*	font-weight: bolder;
-*/	}
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+	}
 #current-date{
-/*	font-weight: bolder;*/
 	color: white;
 	font-size: 30px;
-	text-shadow: 2px 2px #CE7126;
-
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
+
 #about-main{;
 font-size: 28px;
+}
+.when-on{
+	font-size: 30px;
+	background-color: #CE7126;
+	color: white;
 }
 .description{font-size: 20px;}
 

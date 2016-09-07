@@ -1,0 +1,244 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+
+a:link, a:hover, a:visited, a:active {text-decoration: none;}
+
+ul li{list-style: none;}
+
+body{
+	font-family: "ratio-display";
+	background-color: #f5f5fa;
+	/*font-family: "Alef Hebrew"*/
+}
+
+.notes{
+	color: #FF00E0;
+	font-size: 15px;
+}
+.container{
+	padding:10px;
+	margin-top: 40px;
+/*	margin: auto;
+	max-width: 960px;*/
+}
+
+.hebrew-font{ font-family: "Alef Hebrew";   Arial,
+               sans-serif;}
+
+.navbar li{
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 30px;
+	display: inline-block;
+	text-align: center;
+}
+.navbar li a{
+	text-align: center;
+	color: #CE7126;
+}
+.navbar li a img{
+	margin-bottom: 10px;
+	width: 80%;
+
+}
+.languages li a{
+	background-color: #CE7126;
+	color: white;
+	padding: 4px;
+}
+
+.languages li a:hover {
+	background-color: white;
+	color: #CE7126;	
+}
+
+.hebrew{
+	transform: rotate(6deg);
+	margin-top: 20px;}
+.english{
+	margin-top: 20px;
+	transform: rotate(-2deg);}
+.categories{
+	font-size: 40px;
+	border-bottom: 2px solid #CE7126;
+	color:  #CE7126;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.when-on{
+	font-size: 32px;
+	border-bottom: 2px solid #CE7126;
+	color:  #CE7126;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	text-align: center;
+	letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.exhi-date{
+	background-color: #202428;
+	padding: 5px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px; 
+	color: white;
+	margin-bottom: 10px;
+}
+.brief-description{
+	font-size: 22px; 	
+}
+
+.read-more a{
+	background-color: #CE7126;
+	color: white;
+	text-decoration: none;
+	padding-top:7px;
+	padding-bottom: 7px;	
+	padding-left:20px;
+	padding-right: 20px; 
+}
+.read-more{
+	margin-top: 20px;
+	font-weight: 500;
+}
+.read-more a:hover{
+	border: 1px solid #CE7126;
+	background-color: white;
+	color: #CE7126; 
+}
+.title-exhib{
+	font-size:30px;
+	margin-bottom: 15px;
+	color: #CE7126;
+	font-weight: 900;
+}
+
+.title-main-exhib{
+	font-size:40px;
+	margin-bottom: 15px;
+	color: #CE7126;
+	font-weight: 900;
+}
+.categories-small, .categories-dark{
+	font-weight: 400;
+	font-size: 20px; 
+	color: #9A8F9A;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.categories-small span{
+	padding: 8px;
+	background-color: white;}
+.categories-dark span{
+	padding: 8px;
+	background-color: #202428;}	
+.thin-line{
+	height: 1px;
+	background-color: #d7d8dd;
+margin-top: -10px;
+}
+
+#current-image{
+	background-image: url("../images/kinshasa-ville1.jpg");
+	/*background-image: url("../images/pregnant.jpg");*/
+	background-repeat: no-repeat;
+	z-index: -1;
+	/*	position: absolute;*/
+	width: 100%;
+	height: 600px;
+}
+
+.logo img{width: 65%;}
+
+.navline{
+	padding-top: 20px;
+	padding:15px;
+}
+
+#current-text{
+	 text-align: center;
+}
+
+#exhibition-name{
+	font-size: 100px;
+	color: white;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+	}
+
+#current-date{
+	color: white;
+	font-size: 30px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.about-main{
+	margin-top: -40px;
+	margin-left: -40px;
+	padding: 12px;
+	line-height: 1.3em;
+	position: absolute;
+	width: 33%;
+	color: white;
+	background-color: #CE7126;
+	font-size: 28px;
+	font-family: "skolar-sans-latin",sans-serif;
+	font-weight: 400;
+}
+
+.description{
+	font-size: 20px;
+	background-color: white;
+}
+
+.landing-about{margin-top: 80px;}
+.past-exhib{margin-top: 10px;}
+.past-exhib:hover {opacity: .5;}
+
+.past-events{
+	background-color: #202428;
+	width: 100%;
+}
+.description-dark{
+	font-size: 20px;
+	color: white;
+}
+/*Menu items*/
+
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (max-width:991px){
+
+#exhibition-name{
+	font-size: 90px;
+	color: white;
+	font-weight: bolder;
+	}
+#current-date{
+		font-weight: bolder;
+	color: white;
+	font-size: 25px;
+}
+
+}/* end max-width 991 */
+
+@media screen and (max-width:767px){
+
+#exhibition-name{
+	font-size: 50px;
+	color: white;
+	font-weight: bolder;
+	}
+#current-date{
+	font-weight: bolder;
+	color: white;
+	font-size: 20px;
+}
+}/* end max-width 767 */
