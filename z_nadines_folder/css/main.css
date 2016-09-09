@@ -15,11 +15,9 @@ body{
 	color: #FF00E0;
 	font-size: 15px;
 }
-.container{
+.container-fluid{
 	padding:10px;
 	margin-top: 40px;
-/*	margin: auto;
-	max-width: 960px;*/
 }
 
 .hebrew-font{ font-family: "Alef Hebrew";   Arial,
@@ -28,7 +26,7 @@ body{
 .navbar li{
 	font-size: 18px;
 	font-weight: 500;
-	margin-left: 30px;
+	margin-left: 6%;
 	display: inline-block;
 	text-align: center;
 }
@@ -73,7 +71,7 @@ body{
 	color:  #CE7126;
 	padding-bottom: 5px;
 	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-top: 90px;
 	text-align: center;
 	letter-spacing: .1em;
     text-transform: uppercase;
@@ -177,15 +175,14 @@ margin-top: -10px;
 }
 
 .about-main{
-	margin-top: -40px;
-	margin-left: -40px;
 	padding: 12px;
 	line-height: 1.3em;
 	position: absolute;
-	width: 33%;
+	width: 20%;
 	color: white;
 	background-color: #CE7126;
-	font-size: 28px;
+	opacity: .8;
+	font-size: 20px;
 	font-family: "skolar-sans-latin",sans-serif;
 	font-weight: 400;
 }
@@ -195,20 +192,34 @@ margin-top: -10px;
 	background-color: white;
 }
 
-.landing-about{margin-top: 80px;}
-.past-exhib{margin-top: 10px;}
-.past-exhib:hover {opacity: .5;}
+.landing-about{margin-top: 80px;
+	margin: auto;
+	max-width: 960px;
+}
+.past-exhibitions{
+max-width: 960px;
+margin:auto;
+}
 
+.dark{	background-color: #202428;}
 .past-events{
-	background-color: #202428;
-	width: 100%;
+	margin: auto;
+	max-width: 960px;
 }
 .description-dark{
 	font-size: 20px;
 	color: white;
 }
-/*Menu items*/
 
+.news{
+	max-width: 960px;
+	margin: auto;
+}
+
+
+/*footer*/
+#contact{margin-top: 40px;}
+.address{font-size: 30px;}
 
 /* ==========================================================================
    Media queries
@@ -241,4 +252,10 @@ margin-top: -10px;
 	color: white;
 	font-size: 20px;
 }
+.past-exhibitions{
+	margin-right: 10px;
+	margin-left:10px;
+}
+
+
 }/* end max-width 767 */
